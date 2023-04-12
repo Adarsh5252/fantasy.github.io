@@ -374,34 +374,36 @@
                                     </div>
                                 </div> 
                             </div>
-                        </div>
-                        
-                        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-                        <script language="JavaScript" type="text/javascript">
-                                $("document").ready(function(){
-                                $(".tab-slider--body").hide();
-                                $(".tab-slider--body:first").show();
-                                });
-
-                                $(".tabToggleSwitch li").click(function() {
-                                $(".tab-slider--body").hide();
-                                var activeTab = $(this).attr("rel");
-                                $("#"+activeTab).fadeIn();
-                                    if($(this).attr("rel") == "tab2"){
-                                        $('.tabToggleSwitch').addClass('slide');
-                                    }else{
-                                        $('.tabToggleSwitch').removeClass('slide');
-                                    }
-                                $(".tabToggleSwitch li").removeClass("active");
-                                $(this).addClass("active");
-                                });
-
-                        </script>
+                        </div> 
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script language="JavaScript" type="text/javascript">
+            $("document").ready(function(){
+            $(".tab-slider--body").hide();
+            $(".tab-slider--body:first").show();
+            });
+
+            $(".tabToggleSwitch li").click(function() {
+            $(".tab-slider--body").hide();
+            var activeTab = $(this).attr("rel");
+            $("#"+activeTab).fadeIn();
+                if($(this).attr("rel") == "tab2"){
+                    $('.tabToggleSwitch').addClass('slide');
+                }else{
+                    $('.tabToggleSwitch').removeClass('slide');
+                }
+            $(".tabToggleSwitch li").removeClass("active");
+            $(this).addClass("active");
+            });
+
+    </script>
 
 </body>
 
