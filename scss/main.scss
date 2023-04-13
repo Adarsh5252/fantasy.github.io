@@ -1,7 +1,28 @@
-*{margin: 0;padding: 0;}
-*, :after, :before { box-sizing: border-box; }
-body { margin: 0; font-family: 'Archivo', sans-serif;text-transform: capitalize; font-size: .875rem; font-weight: 400; line-height: 1.5; color: #555;background: #002947; text-align: left; text-rendering: optimizeLegibility;}
-.main-container{
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Archivo', sans-serif;
+    text-transform: capitalize;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #555;
+    background: #002947;
+    text-align: left;
+    text-rendering: optimizeLegibility;
+}
+
+.main-container {
     width: 100%;
     max-width: 100%;
     min-height: 100vh;
@@ -14,7 +35,8 @@ body { margin: 0; font-family: 'Archivo', sans-serif;text-transform: capitalize;
     flex-direction: column;
     z-index: 0;
     background-position: 170px;
-    .split-panel{
+
+    .split-panel {
         max-width: 550px;
         min-height: 100vh;
         padding-top: 25px;
@@ -24,25 +46,30 @@ body { margin: 0; font-family: 'Archivo', sans-serif;text-transform: capitalize;
         position: relative;
         overflow-y: hidden;
         overflow-x: hidden;
-        @media only screen and (min-width: 600px){
+
+        @media only screen and (min-width: 600px) {
             max-width: 100%;
         }
-        .fantNavBarFixed{
+
+        .fantNavBarFixed {
             padding: 0px;
             position: relative;
             height: 56px;
+
             .row-container {
                 height: 56px;
                 display: flex;
                 align-items: center;
                 justify-content: start;
                 padding: 0 25px;
-                .section{
+
+                .section {
                     &-left {
                         display: grid;
                         height: 56px;
                         align-items: center;
                         width: 10%;
+
                         .header-action {
                             display: grid;
                             font-size: 18px;
@@ -50,26 +77,31 @@ body { margin: 0; font-family: 'Archivo', sans-serif;text-transform: capitalize;
                             height: 20px;
                             width: 20px;
                             position: relative;
-                            .bckIcon{
+
+                            .bckIcon {
                                 line-height: 22px;
                             }
                         }
                     }
+
                     &-middle {
                         width: 35%;
-                        .teamTitle{
+
+                        .teamTitle {
                             font-weight: 600;
                             font-size: 20px;
                             line-height: 22px;
                         }
                     }
+
                     &-right {
                         display: flex;
                         height: 56px;
                         align-items: center;
                         width: 54.83333%;
                         justify-content: flex-end;
-                        .fantasyCountmeter{
+
+                        .fantasyCountmeter {
                             background: #024B5C;
                             border-radius: 4px;
                             padding: 5px 12px;
@@ -77,7 +109,8 @@ body { margin: 0; font-family: 'Archivo', sans-serif;text-transform: capitalize;
                             font-size: 12px;
                             line-height: 13px;
                         }
-                        .fantasyHelpIcon{
+
+                        .fantasyHelpIcon {
                             margin-left: 20px;
                             display: grid;
                             font-size: 18px;
@@ -89,33 +122,39 @@ body { margin: 0; font-family: 'Archivo', sans-serif;text-transform: capitalize;
                 }
             }
         }
-        .fantasyContainerFixture{
+
+        .fantasyContainerFixture {
             position: relative;
             width: 100%;
             color: #FFF;
             padding-top: 30px;
-            .fantPanelContainer{
+
+            .fantPanelContainer {
                 height: 100%;
                 margin-top: 0;
                 overflow-y: auto;
                 padding-bottom: 40px;
-                .fantasyTeamV{
+
+                .fantasyTeamV {
                     display: block;
                     width: auto;
                     margin: 0 20px 15px;
-                    ul{
+
+                    ul {
                         list-style: none;
                         margin: 0;
                         padding: 0;
-                        li{
-                            .fantasyTeamRow{
+
+                        li {
+                            .fantasyTeamRow {
                                 width: 100%;
                                 position: relative;
                                 display: flex;
                                 flex-direction: row;
                                 align-items: center;
                                 padding: 10px 0;
-                                .option{
+
+                                .option {
                                     &-icon-container {
                                         width: 45px;
                                         display: flex;
@@ -123,19 +162,22 @@ body { margin: 0; font-family: 'Archivo', sans-serif;text-transform: capitalize;
                                         justify-content: center;
                                         border: 1px solid #D9D9D9;
                                         border-radius: 2px;
-                                        img{
+
+                                        img {
                                             width: 100%;
                                             height: auto;
                                             object-fit: fill;
                                         }
                                     }
-                                    &-name-container{
+
+                                    &-name-container {
                                         display: flex;
                                         flex-direction: column;
                                         margin-left: 10px;
                                         position: relative;
                                         width: 80%;
-                                        .teamName{
+
+                                        .teamName {
                                             color: #fff;
                                             font-size: 12px;
                                             line-height: 14px;
@@ -145,12 +187,14 @@ body { margin: 0; font-family: 'Archivo', sans-serif;text-transform: capitalize;
                                             font-weight: 400;
                                         }
                                     }
-                                    &-right-container{
+
+                                    &-right-container {
                                         position: absolute;
                                         right: 0;
                                         display: flex;
                                         flex-direction: row;
-                                        .teamSelected{
+
+                                        .teamSelected {
                                             border-radius: 2px;
                                             text-align: center;
                                             display: flex;
@@ -158,10 +202,12 @@ body { margin: 0; font-family: 'Archivo', sans-serif;text-transform: capitalize;
                                             justify-content: center;
                                             align-items: center;
                                             padding: 3px 15px;
-                                            &.selectedEven{
+
+                                            &.selectedEven {
                                                 background: rgba(255, 255, 255, 0.3);
                                             }
-                                            &.selectedOdd{
+
+                                            &.selectedOdd {
                                                 background: rgba(0, 0, 0, 0.3);
                                             }
                                         }
@@ -171,38 +217,45 @@ body { margin: 0; font-family: 'Archivo', sans-serif;text-transform: capitalize;
                         }
                     }
                 }
-                .fantasyTeamInfoGuide{
+
+                .fantasyTeamInfoGuide {
                     display: block;
                     width: auto;
                     margin: 5px 20px 15px;
-                    .fantasyTeamInfoRow{
+
+                    .fantasyTeamInfoRow {
                         display: flex;
                         align-items: center;
                         justify-content: start;
                         padding: 0;
-                        .splitFantasyInfo{
-                            &-left{
+
+                        .splitFantasyInfo {
+                            &-left {
                                 display: grid;
                                 height: 56px;
                                 align-items: center;
                                 width: 24.83333%;
                             }
-                            &-middle{
+
+                            &-middle {
                                 width: 24.83333%;
                                 margin: 0 15px;
                             }
-                            &-right{
+
+                            &-right {
                                 display: flex;
                                 height: 56px;
                                 align-items: center;
                                 width: 50.83333%;
                                 justify-content: flex-end;
-                                .tabToggleSwitch{
-                                    background:rgba(0, 0, 0, 0.3);
+
+                                .tabToggleSwitch {
+                                    background: rgba(0, 0, 0, 0.3);
                                     border-radius: 34px;
                                     height: 60px;
                                     list-style: none;
                                     position: relative;
+
                                     &:after {
                                         content: "";
                                         width: 50%;
@@ -214,10 +267,12 @@ body { margin: 0; font-family: 'Archivo', sans-serif;text-transform: capitalize;
                                         transition: all 250ms ease-in-out;
                                         border-radius: 35px;
                                     }
+
                                     &.slide:after {
                                         left: 50%;
                                     }
-                                    .options-item{
+
+                                    .options-item {
                                         font-weight: 400;
                                         font-size: 12px;
                                         line-height: 60px;
@@ -227,30 +282,35 @@ body { margin: 0; font-family: 'Archivo', sans-serif;text-transform: capitalize;
                                         z-index: 2;
                                         cursor: pointer;
                                         display: inline-block;
-                                        user-select: none; 
+                                        user-select: none;
                                         transition: color 250ms ease-in-out;
                                         align-items: center;
-                                        &.active{
+
+                                        &.active {
                                             color: #FFF;
                                             border-radius: 60px;
                                         }
-                                        .optionsItemsContainers{
+
+                                        .optionsItemsContainers {
                                             width: 100%;
                                             position: relative;
                                             display: flex;
                                             flex-direction: row;
                                             align-items: center;
-                                            .option-icon-container{
+
+                                            .option-icon-container {
                                                 width: 30px;
                                                 height: 30px;
                                                 display: flex;
                                                 flex-direction: row;
                                                 justify-content: center;
-                                                i{
+
+                                                i {
                                                     font-size: 18px;
                                                     line-height: 30px;
                                                 }
-                                                .pitchIcon{
+
+                                                .pitchIcon {
                                                     content: "";
                                                     background: url(svg/pitch-icon.svg);
                                                     display: inline-block;
@@ -267,31 +327,36 @@ body { margin: 0; font-family: 'Archivo', sans-serif;text-transform: capitalize;
                                     }
                                 }
                             }
+
                             &-left,
-                            &-middle{
-                                .infoCredit{
+                            &-middle {
+                                .infoCredit {
                                     background: #024B5C;
                                     border-radius: 4px;
                                     padding: 10px;
                                     height: 60px;
-                                    .creditDetailsTeam{
+
+                                    .creditDetailsTeam {
                                         font-weight: 500;
                                         font-size: 10px;
                                         color: #FFF;
-                                        span{
+
+                                        span {
                                             font-size: 16px;
                                             line-height: 17px;
                                             padding-right: 5px;
                                         }
                                     }
-                                    .fantasyRangerBar{
+
+                                    .fantasyRangerBar {
                                         border-radius: 22px;
                                         width: 100%;
                                         height: 4px;
                                         position: relative;
                                         margin: 10px 0 0;
                                         display: block;
-                                        &::before{
+
+                                        &::before {
                                             content: "";
                                             background: #000000;
                                             opacity: 0.3;
@@ -300,6 +365,7 @@ body { margin: 0; font-family: 'Archivo', sans-serif;text-transform: capitalize;
                                             display: block;
                                             border-radius: 50px;
                                         }
+
                                         i.activeSelected {
                                             height: 4px;
                                             background: #00B2DB;
@@ -314,7 +380,8 @@ body { margin: 0; font-family: 'Archivo', sans-serif;text-transform: capitalize;
                             }
 
                         }
-                        .fantasyTeamInfoFixtureDetails{
+
+                        .fantasyTeamInfoFixtureDetails {
                             position: relative;
                             width: 100%;
                             height: calc(68vh - 61px);
@@ -324,53 +391,63 @@ body { margin: 0; font-family: 'Archivo', sans-serif;text-transform: capitalize;
                             color: #002947;
                             border-radius: 6px;
                             padding: 6px;
-                            @media only screen and (min-width: 600px){
+
+                            @media only screen and (min-width: 600px) {
                                 height: auto;
                             }
-                            .fixtureTeamfantasySelection{
-                                table{
+
+                            .fixtureTeamfantasySelection {
+                                table {
                                     width: 100%;
                                     border-collapse: collapse;
                                     text-align: left;
+
                                     &.primary-table {
                                         background-color: #fff;
-                                        thead{
+
+                                        thead {
                                             background-color: #E4E4E4;
                                             border-radius: 45px;
                                             padding: 5px 10px;
                                             display: table-caption;
                                             font-size: 12px;
                                             line-height: 18px;
-                                            tr{
-                                                th{
+
+                                            tr {
+                                                th {
                                                     padding: 0 !important;
                                                 }
                                             }
                                         }
+
                                         .roster-player-row {
                                             display: flex;
                                             flex-direction: row;
                                             align-items: center;
                                             justify-content: center;
-                                            border: 0!important;
-                                            &:nth-child(even){
+                                            border: 0 !important;
+
+                                            &:nth-child(even) {
                                                 background-color: rgba(2, 75, 92, .1);
                                             }
+
                                             td {
                                                 border-top: 0;
                                                 vertical-align: middle;
                                                 padding: 0;
                                             }
-                                                
+
                                             .player-item-large {
                                                 width: 50%;
-                                                padding: 0!important;
-                                                .playerRow{
+                                                padding: 0 !important;
+
+                                                .playerRow {
                                                     display: flex;
                                                     padding-left: 0;
                                                     padding-bottom: 0px;
                                                     padding-top: 15px;
-                                                    .playerTshirtImg{
+
+                                                    .playerTshirtImg {
                                                         height: 40px;
                                                         width: 30px;
                                                         background-color: #fff;
@@ -379,6 +456,7 @@ body { margin: 0; font-family: 'Archivo', sans-serif;text-transform: capitalize;
                                                         display: inline-block;
                                                         vertical-align: middle;
                                                         margin: auto 10px 14px 0;
+
                                                         img {
                                                             max-width: 100%;
                                                             position: relative;
@@ -387,29 +465,35 @@ body { margin: 0; font-family: 'Archivo', sans-serif;text-transform: capitalize;
                                                             transform: translateY(-50%);
                                                         }
                                                     }
-                                                    .playerNameTeam{
-                                                        .playersNameDisplay{
+
+                                                    .playerNameTeam {
+                                                        .playersNameDisplay {
                                                             font-size: 16px;
                                                             list-style: 22px;
                                                             text-transform: capitalize;
 
                                                         }
-                                                        .playerWhichCountry{
+
+                                                        .playerWhichCountry {
                                                             font-size: 12px;
                                                             text-transform: uppercase;
                                                         }
                                                     }
                                                 }
                                             }
+
                                             .player-item-salary {
                                                 width: 15%;
                                                 padding: 5px 0 0;
+
                                                 &.text-center {
-                                                    text-align: center!important;
+                                                    text-align: center !important;
                                                 }
+
                                                 &.text-right-ltr {
                                                     text-align: right;
                                                 }
+
                                                 .roster-player-salary {
                                                     color: #5E7484;
                                                     list-style-type: none;
@@ -420,32 +504,38 @@ body { margin: 0; font-family: 'Archivo', sans-serif;text-transform: capitalize;
                                                 }
                                             }
                                         }
+
                                         .btn-roster-action {
                                             background-color: #fff;
-                                            border: 2px solid #4CC738!important;
+                                            border: 2px solid #4CC738 !important;
                                             border-radius: 5px;
                                             font-size: 12px;
                                             padding: 6px;
                                             margin-right: 10px;
-                                            i{
+
+                                            i {
                                                 color: #4CC738;
                                             }
-                                            &.added{
+
+                                            &.added {
                                                 border-color: #FF5454 !important;
-                                                i{
+
+                                                i {
                                                     color: #FF5454;
                                                 }
                                             }
                                         }
+
                                         .btn-roster-action {
                                             display: inline-block;
                                         }
                                     }
                                 }
                             }
+
                             .my-team-field-view-container {
                                 background-color: #212341;
-                                background-image:url(img/ic_cricket_stadium.png);
+                                background-image: url(img/ic_cricket_stadium.png);
                                 background-repeat: no-repeat;
                                 background-size: cover;
                                 background-position: 50% top;
@@ -456,6 +546,7 @@ body { margin: 0; font-family: 'Archivo', sans-serif;text-transform: capitalize;
                                 max-width: 100vw;
                                 height: auto;
                                 min-height: 650px;
+
                                 .player-area {
                                     position: relative;
                                     margin-top: 20px;
@@ -464,9 +555,11 @@ body { margin: 0; font-family: 'Archivo', sans-serif;text-transform: capitalize;
                                     overflow-y: auto;
                                     overflow-x: hidden;
                                     margin-bottom: 5%;
+
                                     &.player-area.full-height {
                                         height: 85%;
                                     }
+
                                     .space-evenly-container {
                                         position: absolute;
                                         top: 0;
@@ -478,7 +571,8 @@ body { margin: 0; font-family: 'Archivo', sans-serif;text-transform: capitalize;
                                         justify-content: space-around;
                                         text-align: center;
                                         z-index: 1;
-                                        .player-position-row-parent{
+
+                                        .player-position-row-parent {
                                             .position-name {
                                                 display: block;
                                                 text-align: center;
@@ -490,21 +584,25 @@ body { margin: 0; font-family: 'Archivo', sans-serif;text-transform: capitalize;
                                                 margin-bottom: 5px;
                                                 opacity: .57;
                                             }
+
                                             .player-position-row {
                                                 display: flex;
                                                 flex-direction: row;
                                                 justify-content: space-evenly;
                                                 flex-wrap: wrap;
+
                                                 .player-row-container {
                                                     margin-top: 10px;
                                                     display: inline-block;
                                                     text-align: center;
                                                     position: relative;
+
                                                     .myteam-player-jersey {
                                                         cursor: pointer;
                                                         width: 45px;
                                                         height: 45px;
                                                     }
+
                                                     .c-style {
                                                         width: 20px;
                                                         height: 20px;
@@ -519,10 +617,11 @@ body { margin: 0; font-family: 'Archivo', sans-serif;text-transform: capitalize;
                                                         border-radius: 50%;
                                                         font-family: "Exo2-Bold";
                                                     }
+
                                                     .player-name {
                                                         border-top-left-radius: 4px;
                                                         border-top-right-radius: 4px;
-                                                        background: rgba(0,0,0,.48);
+                                                        background: rgba(0, 0, 0, .48);
                                                         color: #fff;
                                                         font-family: "Exo2-Bold";
                                                         font-size: 12px;
@@ -537,9 +636,10 @@ body { margin: 0; font-family: 'Archivo', sans-serif;text-transform: capitalize;
                                                         height: 19px;
                                                         cursor: pointer;
                                                     }
+
                                                     .bottom-container {
                                                         cursor: pointer;
-                                                        background-color: rgba(0,0,0,.6);
+                                                        background-color: rgba(0, 0, 0, .6);
                                                         border-bottom-left-radius: 4px;
                                                         border-bottom-right-radius: 4px;
                                                         display: block;
@@ -549,9 +649,10 @@ body { margin: 0; font-family: 'Archivo', sans-serif;text-transform: capitalize;
                                                         position: relative;
                                                         width: 82px;
                                                     }
+
                                                     .player_salary {
                                                         display: inline-block;
-                                                        color: hsla(0,0%,100%,.8);
+                                                        color: hsla(0, 0%, 100%, .8);
                                                         text-align: center;
                                                         font-size: 10px;
                                                         width: 49%;
